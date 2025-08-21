@@ -1,0 +1,26 @@
+{
+  "name": "quirklog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+    "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "concurrently": "^9.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.540.0",
+    "mongoose": "^8.16.4",
+    "multer": "^2.0.2",
+    "path": "^0.12.7",
+    "streamifier": "^0.1.1"
+  }
+}
