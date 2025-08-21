@@ -123,12 +123,8 @@ export default function SinglePost({ data }) {
           <span className="flex items-center gap-1.5">
             <User size={16} className="text-indigo-600" />
             Author:{" "}
-            <Link
-              to={`/?user=${data.username}`}
-              className="text-indigo-600 hover:underline font-medium"
-            >
               {data.username}
-            </Link>
+
           </span>
           <span className="flex items-center gap-1.5">
             <Calendar size={16} className="text-gray-500" />

@@ -15,8 +15,6 @@ import {
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Sidebar() {
-  const [cats, setCat] = useState([]);
-
   useEffect(() => {
     const getCat = async () => {
       try {
@@ -87,21 +85,6 @@ export default function Sidebar() {
       </div>
 
       {/* Categories */}
-      {cats.length > 0 && (
-        <div className="space-y-2">
-          <h3 className="text-indigo-600 font-semibold border-b pb-1">CATEGORIES</h3>
-          <ul className="flex flex-wrap gap-2 mt-2">
-            {cats.map((c) => (
-              <li
-                key={c._id}
-                className="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full hover:bg-gray-200 transition"
-              >
-                <Link to={`/?category=${c.name}`}>{c.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
 
       {/* Connect / Contact */}
       <div className="text-center">
