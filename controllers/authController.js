@@ -1,6 +1,6 @@
 const connectDB = require("../config/DB.js");
 const bcrypt = require("bcryptjs");
-
+const userModel = require("../models/User.js")
 const registerController = async (req, res) => {
   try {
     await connectDB()
