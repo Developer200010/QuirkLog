@@ -10,7 +10,7 @@ export default function Posts({ posts }) {
     >
       {/* Post Image */}
       <img
-        className="w-full h-44 object-cover"
+        className="w-full h-44 object-"
         src={
           posts.photo
             ?  posts.photo
@@ -32,7 +32,7 @@ export default function Posts({ posts }) {
         </span>
 
         {/* Description */}
-        <p className="mt-2 text-gray-600 text-sm leading-relaxed line-clamp-2 flex-1">
+        <p className="mt-2 text-gray-600 text-sm leading-relaxed line-clamp-1 flex-1">
           {posts.desc}
         </p>
 
